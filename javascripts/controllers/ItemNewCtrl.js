@@ -11,4 +11,4 @@ app.controller("ItemNewCtrl", function($scope, $location, ItemFactory){
 			$scope.newTask = {};
 			});
 	};
-})
+});

@@ -21,6 +21,6 @@ app.controller("ItemListCtrl", function($scope, ItemFactory){
 
 	$scope.inputChange = function(thingy){
 		ItemFactory.editItem(thingy).then(function(response){
-		})
+		});
 	};
-})
+});
