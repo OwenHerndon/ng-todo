@@ -1,39 +1,39 @@
-"use strict";
+// "use strict";
 
-app.controller("TodoCtrl", function($scope, ItemFactory){
-	$scope.welcome = "hello";
-	$scope.showListView = true;
-	$scope.newTask = {};
-	$scope.items = [];
+// app.controller("TodoCtrl", function($scope, ItemFactory){
+// 	$scope.welcome = "hello";
+// 	$scope.showListView = true;
+// 	$scope.newTask = {};
+// 	$scope.items = [];
 	
-	let getItems = function(){
-	ItemFactory.getItemList().then(function(fbItems){
-		$scope.items = fbItems;
-	});
-	};
-	getItems();
+// 	let getItems = function(){
+// 	ItemFactory.getItemList().then(function(fbItems){
+// 		$scope.items = fbItems;
+// 	});
+// 	};
+// 	getItems();
 
-	$scope.allItems=function(){
-		$scope.showListView = true;
-	};
+// 	$scope.allItems=function(){
+// 		$scope.showListView = true;
+// 	};
 
-	$scope.newItem=function(){
-		$scope.showListView = false;
-	};
+// 	$scope.newItem=function(){
+// 		$scope.showListView = false;
+// 	};
 
-	$scope.addNewItem=function(){
-		$scope.newTask.isCompleted = false;
-		ItemFactory.postNewItem($scope.newTask).then(function(itemId){
-			getItems();
-			$scope.newTask = "";
-			$scope.showListView = true;
-		});
+// 	$scope.addNewItem=function(){
+// 		$scope.newTask.isCompleted = false;
+// 		ItemFactory.postNewItem($scope.newTask).then(function(itemId){
+// 			getItems();
+// 			$scope.newTask = "";
+// 			$scope.showListView = true;
+// 		});
 
-		};
+// 		};
 
-	$scope.deleteItem = function(itemId){
-		ItemFactory.deleteItem(itemId).then(function(response){
-			getItems();
-		});
-	};
+// 	$scope.deleteItem = function(itemId){
+// 		ItemFactory.deleteItem(itemId).then(function(response){
+// 			getItems();
+// 		});
+// 	};
 });
