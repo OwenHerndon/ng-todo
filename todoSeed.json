@@ -3,17 +3,34 @@
 	"item0":{
 		"task":"Mow the lawn",
 		"isCompleted": true,
-		"assignedTo":"Zoe"
+		"assignedTo":"Zoe",
+		"uid":"J4KbcQVTtzTIE9fwtiXnHXSnEDC3"
 	},
 	"item1":{
 		"task":"Beer run",
 		"isCompleted": false,
-		"assignedTo":"William"
+		"assignedTo":"William",
+		"uid":"J4KbcQVTtzTIE9fwtiXnHXSnEDC3"
 	},
 	"item2":{
 		"task":"Order Jets",
 		"isCompleted": false,
-		"assignedTo":"Nathan"
+		"assignedTo":"Nathan",
+		"uid":"xFiCffEyV4av5c8wSSOXQE4ey4D2"
 	}
+	},
+	"users":{
+		"user0":{
+			"uid":"J4KbcQVTtzTIE9fwtiXnHXSnEDC3",
+			"username":"a"
+		},
+		"user1":{
+			"uid":"xFiCffEyV4av5c8wSSOXQE4ey4D2",
+			"username":"b"
+		},
+		"user2":{
+			"uid":"oj3aROR1cFgc7fOaOR9r935R3CP2",
+			"username":"c"
+		}
 	}
 }
